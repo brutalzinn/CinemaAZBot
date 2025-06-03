@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rober\\source\\repos\\CinemaAZBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1215C564-1553-4A3F-B22B-EA4850DBB970}|CinemaAZBot\\CinemaAZBot.csproj|c:\\users\\rober\\source\\repos\\cinemaazbot\\cinemaazbot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1215C564-1553-4A3F-B22B-EA4850DBB970}|CinemaAZBot\\CinemaAZBot.csproj|solutionrelative:cinemaazbot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1215C564-1553-4A3F-B22B-EA4850DBB970}|CinemaAZBot\\CinemaAZBot.csproj|c:\\users\\rober\\source\\repos\\cinemaazbot\\cinemaazbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1215C564-1553-4A3F-B22B-EA4850DBB970}|CinemaAZBot\\CinemaAZBot.csproj|solutionrelative:cinemaazbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\CinemaAZBot\\CinemaAZBot\\appsettings.json",
+              "RelativeDocumentMoniker": "CinemaAZBot\\appsettings.json",
+              "ToolTip": "C:\\Users\\rober\\source\\repos\\CinemaAZBot\\CinemaAZBot\\appsettings.json",
+              "RelativeToolTip": "CinemaAZBot\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T18:06:30.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\CinemaAZBot\\CinemaAZBot\\Program.cs",
+              "RelativeDocumentMoniker": "CinemaAZBot\\Program.cs",
+              "ToolTip": "C:\\Users\\rober\\source\\repos\\CinemaAZBot\\CinemaAZBot\\Program.cs",
+              "RelativeToolTip": "CinemaAZBot\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAnwCcAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T18:06:16.116Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

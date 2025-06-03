@@ -33,11 +33,16 @@ public class Program
             {
                 if (args[0].ToLower() == "films")
                 {
-                    // dotnet run getfilms
                     Console.WriteLine("Getting Films");
-                    List<Movie> allMovies = await GetAllMovies(); 
+                    int totalPages = 5;
+                    if (args.Length >= 2){
+                        totalPages = Convert.ToInt32(args[1]);
+                        Console.WriteLine($"with {totalPages}");
+                    }
+                    List<Movie> allMovies = await GetAllMovies(totalPages); 
                     string json = JsonConvert.SerializeObject(allMovies);
-                    Console.WriteLine(json); //print json
+                    Console.WriteLine(json); 
+                    File.WriteAllText("movies.json", json);
                 }
                 else if (args[0].ToLower() == "sql")
                 {
@@ -70,10 +75,9 @@ public class Program
         }
     }
 
-    static async Task<List<Movie>> GetAllMovies()
+    static async Task<List<Movie>> GetAllMovies(int totalPages = 5)
     {
         int page = 1;
-        int totalPages = 5;
         List<Movie> allMovies = new List<Movie>();
         do
         {
@@ -107,13 +111,12 @@ public class Program
         {
             string overview = movie.overview?.Replace("'", "''");
 
-            string sql = $"INSERT INTO filme (nome, sinopse, nota, ano_lancamento) VALUES (" +
+            string sql = $"INSERT INTO Filmes (Nome, Sinopse, Nota, AnoLancamento) VALUES (" +
                     
                          $"'{movie.title.Replace("'", "''")}', " +
                          $"'{overview}', " +
-                         $"{movie.vote_average}, " +
-                         $"'{DateTime.Parse(movie.release_date).Year}') " + 
-                         $"ON CONFLICT (id) DO NOTHING;";
+                         $"{movie.vote_average.ToString().Replace(",", ".")}, " +
+                         $"{DateTime.Parse(movie.release_date).Year});";
             sqlStatements.Add(sql);
         }
         return sqlStatements;
