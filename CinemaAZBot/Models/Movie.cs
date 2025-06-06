@@ -17,7 +17,8 @@ namespace ConsoleApp1.Models
         public double vote_average { get; set; }
         public int vote_count { get; set; }
         public string poster_path { get; set; }
-        public bool adult { get; set; } // Add this line to handle the "adult" property
+        public bool adult { get; set; } 
+
         public string backdrop_path { get; set; }
         public List<int> genre_ids { get; set; }
         public string original_language { get; set; }

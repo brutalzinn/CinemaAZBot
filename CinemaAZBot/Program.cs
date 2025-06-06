@@ -111,12 +111,15 @@ public class Program
         {
             string overview = movie.overview?.Replace("'", "''");
 
-            string sql = $"INSERT INTO Filmes (Nome, Sinopse, Nota, AnoLancamento) VALUES (" +
+            string sql = $"INSERT INTO Filmes (Nome, Sinopse, Nota, AnoLancamento, BackgroundImgUrl, CoverImgUrl) VALUES (" +
                     
                          $"'{movie.title.Replace("'", "''")}', " +
                          $"'{overview}', " +
                          $"{movie.vote_average.ToString().Replace(",", ".")}, " +
-                         $"{DateTime.Parse(movie.release_date).Year});";
+                         $"{DateTime.Parse(movie.release_date).Year}," +
+                         $"'https://image.tmdb.org/t/p/w500{movie.backdrop_path}'," +
+                         $"'https://image.tmdb.org/t/p/w500{movie.poster_path}'" +
+                         $");";
             sqlStatements.Add(sql);
         }
         return sqlStatements;
