@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,5 +25,7 @@ namespace ConsoleApp1.Models
         public string original_language { get; set; }
         public string original_title { get; set; }
         public bool video { get; set; }
+
+        public Details details { get; set; }
     }
 }
